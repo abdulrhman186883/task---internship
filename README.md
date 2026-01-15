@@ -1,70 +1,75 @@
-How it works 
+
+## How it works
 
 The recommendation flow happens in three steps:
 
-1. Semantic Retrieval
+### 1. Semantic Retrieval
 
-All customer references are turned into embeddings using Ollama.
+All customer references are turned into embeddings using **Ollama**.
 The user query is embedded the same way, and we use cosine similarity to find the closest matches.
 
-This gives us a shortlist of candidates that are roughly relevant.
+This gives us a shortlist of candidates that are *roughly* relevant.
 
-2. Re-Ranking (the smart part)
+---
 
-The shortlisted candidates are re-ranked using a CrossEncoder model
-(BAAI/bge-reranker-base).
+### 2. Re-Ranking (the smart part)
 
-This step compares the query and each candidate together, which makes it very good at catching intent and keywords like:
+The shortlisted candidates are re-ranked using a **CrossEncoder** model
+(`BAAI/bge-reranker-base`).
 
-“self-service”
+This step compares the query and each candidate **together**, which makes it very good at catching intent and keywords like:
 
-“B2B”
+* “self-service”
+* “B2B”
+* “headless”
+* “scalability”
 
-“headless”
+---
 
-“scalability”
-
-3. Pitch Generation
+### 3. Pitch Generation
 
 Once we have the best match, we pass:
 
-the user query
+* the user query
+* the customer name
+* the original challenge
+* the project description
 
-the customer name
+to an LLM, which generates a short, focused **2-sentence pitch** explaining why this reference fits.
 
-the original challenge
+---
 
-the project description
+## Tech stack
 
-to an LLM, which generates a short, focused 2-sentence pitch explaining why this reference fits.
-
-Tech stack
-
-FastAPI – API framework
-
-Ollama – embeddings + text generation
-
-Sentence Transformers – CrossEncoder reranker
-
-PyTorch
-
-NumPy
-
-scikit-learn
+* **FastAPI** – API framework
+* **Ollama** – embeddings + text generation
+* **Sentence Transformers** – CrossEncoder reranker
+* **PyTorch**
+* **NumPy**
+* **scikit-learn**
 
 Simple, boring, reliable tools.
 
-Project structure
+---
+
+## Project structure
+
+```
 .
-├── main.py               # FastAPI app
+├── backend.py               # FastAPI app
+├── index.html 
 ├── references.json       # Customer case studies
 ├── README.md
 └── requirements.txt
+```
 
-Customer references format
+---
 
-References are stored in references.json and look like this:
+## Customer references format
 
+References are stored in `references.json` and look like this:
+
+```json
 [
   {
     "customer": "Customer Name",
@@ -72,48 +77,70 @@ References are stored in references.json and look like this:
     "description": "What Intershop delivered and how"
   }
 ]
-
+```
 
 Nothing fancy — just structured text.
 
-Getting started
-Prerequisites
+---
 
-Python 3.9+
+## Getting started
 
-Ollama installed and running locally
+### Prerequisites
 
-Internet connection (first run downloads the reranker model)
+* Python 3.9+
+* Ollama installed and running locally
+* Internet connection (first run downloads the reranker model)
 
-Install dependencies
+---
+
+### Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-Pull Ollama models
+---
+
+### Pull Ollama models
+
+```bash
 ollama pull qwen3-embedding:0.6b
 ollama pull llama3.1
+```
 
-Run the API
+---
+
+### Run the API
+
+```bash
 uvicorn main:app --reload
-
+```
 
 The API will be available at:
 
+```
 http://localhost:8000
+```
 
-API endpoints
-POST /recommend
+---
+
+## API endpoints
+
+### `POST /recommend`
 
 Returns the best customer reference plus a generated pitch.
 
-Request
+**Request**
 
+```json
 {
   "query": "We are looking for a self-service B2B commerce solution"
 }
+```
 
+**Response**
 
-Response
-
+```json
 {
   "query": "We are looking for a self-service B2B commerce solution",
   "top_recommendation": "ACME Corp",
@@ -126,28 +153,38 @@ Response
     }
   ]
 }
+```
 
-GET /health
+---
+
+### `GET /health`
 
 Simple health check to confirm the API is running.
 
+```json
 {
   "status": "online",
   "models_loaded": true
 }
+```
 
-Configuration
+---
 
-You can change the models at the top of main.py:
+## Configuration
 
+You can change the models at the top of `main.py`:
+
+```python
 OLLAMA_EMBED_MODEL = "qwen3-embedding:0.6b"
 LLM_MODEL = "llama3.1"
 RERANKER_MODEL_ID = "BAAI/bge-reranker-base"
+```
 
-Notes & tips
+---
 
-The reranker model (~90MB) is downloaded only once on startup
+## Notes & tips
 
-Embeddings are currently recomputed per request (fine for a PoC)
+* The reranker model (~90MB) is downloaded only once on startup
+* Embeddings are currently recomputed per request (fine for a PoC)
+* Debug output shows what the reranker actually sees
 
-Debug output shows what the reranker actually sees
