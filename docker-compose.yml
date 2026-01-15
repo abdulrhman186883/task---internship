@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  # Ollama service for embeddings and LLM
+  ollama:
+    image: ollama/ollama:latest
+    container_name: intershop_ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_HOST=0.0.0.0:11434
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  # FastAPI backend service
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: intershop_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+    depends_on:
+      ollama:
+        condition: service_healthy
+    volumes:
+      - ./references.json:/app/references.json
+      - ./index.html:/app/index.html
+    restart: unless-stopped
+
+volumes:
+  ollama_data:
+    driver: local
+
+networks:
+  default:
+    name: intershop_network
