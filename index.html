@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intershop AI Advisor - Box Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .option-box {
+            @apply flex flex-col items-center justify-center p-4 min-h-[85px] text-center border-2 border-slate-200 
+            rounded-2xl bg-white cursor-pointer transition-all duration-300 select-none shadow-sm
+            font-bold text-slate-600 relative overflow-hidden;
+        }
+
+        .option-box:hover {
+            @apply border-blue-400 bg-blue-50 text-blue-700 -translate-y-1 shadow-md;
+        }
+
+        .option-box.active {
+            @apply border-blue-600 bg-blue-600 text-white -translate-y-1 scale-[1.03];
+            box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.4), 0 8px 10px -6px rgba(37, 99, 235, 0.4);
+        }
+
+        .option-box.active::after {
+            content: '✓';
+            @apply absolute top-2 right-3 text-white text-xs font-black opacity-80;
+        }
+
+        .group-label { 
+            @apply block text-[10px] font-black text-slate-400 uppercase tracking-[0.3em] mb-4 ml-1; 
+        }
+
+        .fade-in { animation: fadeIn 0.4s ease-out forwards; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Chart Styling */
+        #chart-container svg {
+            @apply mx-auto overflow-visible;
+        }
+    </style>
+</head>
+<body class="bg-[#F8FAFC] min-h-screen font-sans">
+    <div class="max-w-6xl mx-auto py-12 px-6">
+        
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-black text-slate-900 tracking-tight">AI Solution Advisor</h1>
+            <p class="text-slate-500 mt-2 font-medium">Your selections will generate a custom search query below.</p>
+        </div>
+
+        <div class="space-y-10">
+            <section>
+                <label class="group-label">01. Business Model</label>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4" id="model-group">
+                    <div class="option-box active" onclick="updateSentence(this, 'model')">B2B Wholesale</div>
+                    <div class="option-box" onclick="updateSentence(this, 'model')">B2C Retail</div>
+                    <div class="option-box" onclick="updateSentence(this, 'model')">B2X Omnichannel</div>
+                    <div class="option-box" onclick="updateSentence(this, 'model')">B2B2C Portal</div>
+                    <div class="option-box" onclick="updateSentence(this, 'model')">Marketplace</div>
+                    <div class="option-box" onclick="updateSentence(this, 'model')">Dealer Portal</div>
+                </div>
+            </section>
+
+            <section>
+                <label class="group-label">02. Primary Goal</label>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="goal-group">
+                    <div class="option-box active" onclick="updateSentence(this, 'goal')">International Expansion</div>
+                    <div class="option-box" onclick="updateSentence(this, 'goal')">Digital Transformation</div>
+                    <div class="option-box" onclick="updateSentence(this, 'goal')">Platform Migration</div>
+                    <div class="option-box" onclick="updateSentence(this, 'goal')">Boosting Efficiency</div>
+                    <div class="option-box" onclick="updateSentence(this, 'goal')">Customer Loyalty</div>
+                    <div class="option-box" onclick="updateSentence(this, 'goal')">E-Procurement</div>
+                    <div class="option-box" onclick="updateSentence(this, 'goal')">After-Sales</div>
+                    <div class="option-box" onclick="updateSentence(this, 'goal')">Omnichannel</div>
+                </div>
+            </section>
+
+            <section>
+                <label class="group-label">03. Requirements</label>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="feature-group">
+                    <div class="option-box active" onclick="updateSentence(this, 'feature')">Huge Catalogs</div>
+                    <div class="option-box" onclick="updateSentence(this, 'feature')">Global Spare Parts</div>
+                    <div class="option-box" onclick="updateSentence(this, 'feature')">Self-Service</div>
+                    <div class="option-box" onclick="updateSentence(this, 'feature')">Cloud Migration</div>
+                    <div class="option-box" onclick="updateSentence(this, 'feature')">Personalized Shopping</div>
+                    <div class="option-box" onclick="updateSentence(this, 'feature')">Click & Collect</div>
+                    <div class="option-box" onclick="updateSentence(this, 'feature')">Composable Arch</div>
+                    <div class="option-box" onclick="updateSentence(this, 'feature')">Content & Commerce</div>
+                </div>
+            </section>
+
+            <div class="pt-8">
+                <div class="bg-white p-3 rounded-[2.5rem] shadow-2xl shadow-slate-200 border border-slate-100">
+                    <div class="flex flex-col md:flex-row gap-3">
+                        <div class="flex-1 relative flex items-center ml-4">
+                            <span class="text-blue-500 mr-2">🔍</span>
+                            <input type="text" id="userQuery" 
+                                class="w-full py-4 text-lg font-bold text-slate-700 bg-transparent outline-none"
+                                placeholder="Generated query...">
+                        </div>
+                        <button onclick="getRecommendation()" id="submitBtn"
+                            class="bg-blue-600 hover:bg-blue-700 text-white font-black py-5 px-14 rounded-[2rem] shadow-xl shadow-blue-200 transition-all active:scale-[0.97] text-xl uppercase tracking-widest">
+                            Match Me!
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="loading" class="hidden py-12 text-center">
+                <div class="inline-block animate-spin rounded-full h-10 w-10 border-4 border-blue-600 border-t-transparent"></div>
+            </div>
+
+            <div id="results" class="hidden space-y-6 fade-in">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-[2.5rem] border-2 border-blue-600 p-10 shadow-2xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-blue-600 text-white px-8 py-3 rounded-bl-3xl text-xs font-black uppercase tracking-widest">Best Match</div>
+                        <h2 id="topCustomer" class="text-4xl font-black text-slate-900 mb-4 tracking-tight">Customer Name</h2>
+                        <p id="pitchText" class="text-xl text-slate-600 leading-relaxed italic font-medium">Pitch...</p>
+                    </div>
+
+                    <div class="bg-white rounded-[2.5rem] p-6 shadow-xl border border-slate-100 flex flex-col items-center">
+                        <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-4">Similarity Distribution</h3>
+                        <div id="chart-container" class="w-full flex justify-center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = () => updateSentence();
+
+        function updateSentence(element, group) {
+            if (element) {
+                const boxes = element.parentElement.children;
+                for (let box of boxes) { box.classList.remove('active'); }
+                element.classList.add('active');
+            }
+            const model = document.querySelector('#model-group .active').innerText;
+            const goal = document.querySelector('#goal-group .active').innerText;
+            const feature = document.querySelector('#feature-group .active').innerText;
+            document.getElementById('userQuery').value = `I need ${model} for ${goal} with ${feature}.`;
+        }
+
+        // 3. Updated D3 Pie Chart Function
+        function createPieChart(data) {
+            const container = document.getElementById('chart-container');
+            container.innerHTML = ''; // Clear previous chart
+
+            const width = 450;
+            const height = 300;
+            const radius = Math.min(width, height) / 2 - 40;
+
+            const color = d3.scaleOrdinal()
+                .domain(data.map(d => d.name))
+                .range(["#2563EB", "#3B82F6", "#60A5FA", "#93C5FD", "#BFDBFE"]);
+
+            const svg = d3.select("#chart-container")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", `translate(${width / 2}, ${height / 2})`);
+
+            const pie = d3.pie()
+                .sort(null)
+                .value(d => d.value);
+
+            const arc = d3.arc()
+                .innerRadius(0)
+                .outerRadius(radius);
+
+            const labelArc = d3.arc()
+                .innerRadius(radius + 10)
+                .outerRadius(radius + 10);
+
+            const arcs = pie(data);
+
+            // Paths
+            svg.selectAll("path")
+                .data(arcs)
+                .join("path")
+                .attr("fill", d => color(d.data.name))
+                .attr("d", arc)
+                .attr("stroke", "white")
+                .style("stroke-width", "2px")
+                .append("title")
+                .text(d => `${d.data.name}: ${(d.data.value * 100).toFixed(1)}%`);
+
+            // Labels
+            svg.selectAll("text")
+                .data(arcs)
+                .join("text")
+                .attr("transform", d => `translate(${labelArc.centroid(d)})`)
+                .attr("text-anchor", d => (d.endAngle + d.startAngle) / 2 > Math.PI ? "end" : "start")
+                .attr("font-size", "10px")
+                .attr("font-weight", "bold")
+                .attr("fill", "#64748b")
+                .text(d => d.data.name);
+        }
+
+        async function getRecommendation() {
+            const query = document.getElementById('userQuery').value;
+            const resultsDiv = document.getElementById('results');
+            const loadingDiv = document.getElementById('loading');
+            
+            loadingDiv.classList.remove('hidden');
+            resultsDiv.classList.add('hidden');
+            console.log("Sending query to model:", query);
+            try {
+                const response = await fetch('http://127.0.0.1:8000/recommend', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query: query })
+                });
+                const data = await response.json();
+                
+                
+                document.getElementById('topCustomer').innerText = data.top_recommendation;
+                document.getElementById('pitchText').innerText = `"${data.pitch}"`;
+
+                // 4. Map backend data to Chart Format
+                const chartData = data.results.map(res => ({
+                    name: res.customer,
+                    value: res.rerank_score
+                }));
+                
+                createPieChart(chartData);
+                
+                resultsDiv.classList.remove('hidden');
+            } catch (e) {
+                alert("Connection error.");
+            } finally {
+                loadingDiv.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

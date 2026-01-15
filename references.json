@@ -1,0 +1,866 @@
+[
+    {
+        "customer": "Lekkerland",
+        "challenge": "One platform for all customers – scalable, smart, and future-proof",
+        "description": "Lekkerland unifies channels and customer types to accelerate growth and digital efficiency.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/lekkerland"
+    },
+    {
+        "customer": "Musgrave MarketPlace Logo BME Black",
+        "challenge": "Transforming the foodservice industry with digital at scale",
+        "description": "Musgrave MarketPlace scaled to 83% digital revenue in under two years.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/musgrave"
+    },
+    {
+        "customer": "Roehm",
+        "challenge": "Enhancing customer experience through digital innovation",
+        "description": "Röhm streamlines B2B procurement and boosts efficiency with a digital customer portal.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/roehm"
+    },
+    {
+        "customer": "Quadient",
+        "challenge": "Global commerce built for resilience and fast time-to-value",
+        "description": "Quadient scales global commerce with speed, efficiency, and confidence.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/quadient"
+    },
+    {
+        "customer": "Nice logo",
+        "challenge": "Transforming the home automation experience worldwide",
+        "description": "Nice S.p.A. embarks on a digital journey to enhance the experience of B2B and B2C customers.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/nice-spa"
+    },
+    {
+        "customer": "Logo-DBNext",
+        "challenge": "The start of a major digital transformation",
+        "description": "DBNext streamlines e-commerce for new online shops of multiple companies on one platform.",
+        "case_study_url": "https://www.groupe-baelen.fr"
+    },
+    {
+        "customer": "Rijkzwaan",
+        "challenge": "Unifying digital commerce and content for global success",
+        "description": "Rijk Zwaan boosts efficiency and user satisfaction with unified content and commerce platform.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/rijk-zwaan"
+    },
+    {
+        "customer": "Dover-esg",
+        "challenge": "Self-service e-commerce for the aftermarket",
+        "description": "Dover-ESG revolutionizes aftermarket parts ordering process",
+        "case_study_url": "https://www.intershop.com/en/customers-details/environmental-solutions-group"
+    },
+    {
+        "customer": "Leading-healthcare-manufacturer-4172ea83-min",
+        "challenge": "Making the shift to composable commerce",
+        "description": "Replatforming to a modern, composable commerce architecture anchored by Intershop.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/leading-healthcare-manufacturer"
+    },
+    {
+        "customer": "Technolit",
+        "challenge": "TECHNOLIT expands in Europe with a large online offering",
+        "description": "The workshop expert markets over 50,000 products via the Intershop Commerce Platform.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/technolit"
+    },
+    {
+        "customer": "Fraisa",
+        "challenge": "Convenient one-stop shopping",
+        "description": "Fraisa realizes personalized shopping experiences for demanding B2B customers.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/fraisa-sa"
+    },
+    {
+        "customer": "Ede",
+        "challenge": "SHOPcloud360:Digitalization that connects",
+        "description": "E/D/E is driving the digital transformation of the industrial supply sector.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/ede"
+    },
+    {
+        "customer": "KION North America Logo",
+        "challenge": "A great example of a successful cloud migration",
+        "description": "KION North America redefines productivity in B2B with Intershop.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/kion"
+    },
+    {
+        "customer": "Midoceanbrands",
+        "challenge": "A boost in performance and scalability",
+        "description": "midocean proudly presents its new powerful B2B online shop.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/midocean"
+    },
+    {
+        "customer": "Soennecken",
+        "challenge": "Innovative Shop Solution for the Future of Commerce",
+        "description": "Soennecken offers an advanced shopping experience and redefines modern commerce.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/soennecken"
+    },
+    {
+        "customer": "Huisman",
+        "challenge": "Servitization, the future of B2B e-commerce",
+        "description": "Huisman revolutionizes service business with global B2B platform based on Intershop.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/huisman"
+    },
+    {
+        "customer": "Heutink",
+        "challenge": "Replatforming e-commerce to increase customer satisfaction",
+        "description": "Heutink migrates to a new B2B platform to address customers more individually.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/heutink"
+    },
+    {
+        "customer": "Buerklin",
+        "challenge": "A significant milestone in digital transformation",
+        "description": "Bürklin sets new standards in the electronics industry with its Intershop-based online store.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/buerklin"
+    },
+    {
+        "customer": "Logo LaminatDEPOT",
+        "challenge": "Successful replatforming within 6 months",
+        "description": "LaminatDEPOT boosts customer experience with fully-featured B2C shop.",
+        "case_study_url": "https://laminatdepot.de/"
+    },
+    {
+        "customer": "Blockgruppe",
+        "challenge": "Shaping the future of the food trade",
+        "description": "Block Group implements Intershop-based multi-client platform.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/block-group"
+    },
+    {
+        "customer": "Haefele",
+        "challenge": "Internationally successful",
+        "description": "Häfele operates B2B online stores in 38 countries via central Intershop Commerce Platform.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/haefele"
+    },
+    {
+        "customer": "Teka",
+        "challenge": "The ease of buying online",
+        "description": "Teka revolutionizes customer experience with digital sales channel.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/teka"
+    },
+    {
+        "customer": "Paredes",
+        "challenge": "Happy customers fuel business growth",
+        "description": "Paredes boosts online sales with future-proof B2B webshop.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/paredes"
+    },
+    {
+        "customer": "Jimblock",
+        "challenge": "Ordering made easy for takeaway customers",
+        "description": "Jim Block implements flexible click & collect solution based on Intershop.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/jimblock"
+    },
+    {
+        "customer": "Galatea",
+        "challenge": "Best practice in digital wholesale",
+        "description": "Galatea creates perfect customer experience for B2B and B2C.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/galatea"
+    },
+    {
+        "customer": "Intershop-dover",
+        "challenge": "Diversified global manufacturer dives into e-commerce",
+        "description": "Dover Corporation proves digital thought leadership with multiple webshops live on Intershop.",
+        "case_study_url": "http://www.dovercorporation.com/"
+    },
+    {
+        "customer": "Trumpf",
+        "challenge": "End-to-end digitalization for a perfect shopping experience",
+        "description": "TRUMPF convinces with digital customer portal with convenient self-service tools.",
+        "case_study_url": "https://www.trumpf.com/en_US/"
+    },
+    {
+        "customer": "Highline-warren",
+        "challenge": "Customer care at its best",
+        "description": "Highline Warren boosts customer satisfaction with convenient self-service tools.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/highline-warren"
+    },
+    {
+        "customer": "Ekosport",
+        "challenge": "The summit is the goal",
+        "description": "Scalable e-commerce store for international expansion in just 12 weeks.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/ekosport"
+    },
+    {
+        "customer": "Kion",
+        "challenge": "Productivity redefined",
+        "description": "A strategic focus on e-commerce keeps the KION GROUP leading a difficult market environment.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/kion"
+    },
+    {
+        "customer": "Xerox",
+        "challenge": "Successful platform change",
+        "description": "Xerox strengthens customer loyalty and market presence with Intershop commerce platform.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/xerox"
+    },
+    {
+        "customer": "Ehlert",
+        "challenge": "Successful digitalization of procurement processes",
+        "description": "Ehlert addresses customers with a consistent brand experience.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/gustav-ehlert_en"
+    },
+    {
+        "customer": "Elefant-ro",
+        "challenge": "Prepared for future growth",
+        "description": "elefant.ro expands local and international market presence.",
+        "case_study_url": "https://www.elefant.ro/"
+    },
+    {
+        "customer": "Wuerth",
+        "challenge": "Close to the customer – online and offline",
+        "description": "Würth realizes an omnichannel concept with fully integrated touchpoints.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/wuerth_en"
+    },
+    {
+        "customer": "Wolters-kluwer",
+        "challenge": "A clear strategy for a successful digital transformation",
+        "description": "Wolters Kluwer digitalizes over 180 years of tradition.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/wolters-kluwer"
+    },
+    {
+        "customer": "Wildkamp",
+        "challenge": "Ultimate perfection in B2B commerce",
+        "description": "Wildkamp realizes convincing B2B customer experience.",
+        "case_study_url": "https://www.wildkamp.nl/"
+    },
+    {
+        "customer": "A1",
+        "challenge": "A success story of digital transformation",
+        "description": "A1 increases online sales figures and customer satisfaction with Intershop.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/a1-croatia"
+    },
+    {
+        "customer": "Iss integrated service solutions",
+        "challenge": "Service platform 4.0",
+        "description": "ISS implements service portal based on Intershop.",
+        "case_study_url": "https://www.issworld.com/"
+    },
+    {
+        "customer": "Rockwool",
+        "challenge": "Increased efficiency due to digital transformation",
+        "description": "ROCKWOOL migrates B2B webshop to Intershop.",
+        "case_study_url": "https://www.rockwool.com/de/"
+    },
+    {
+        "customer": "Shark-ninja",
+        "challenge": "Kick-off for international growth strategy",
+        "description": "SharkNinja strengthens worldwide digital sales business.",
+        "case_study_url": "http://www.sharkninja.com"
+    },
+    {
+        "customer": "Hessen",
+        "challenge": "A milestone in matter of performance",
+        "description": "Hessische Verwaltung für Bodenmanagement und Geoinformation strenghtens online presence.",
+        "case_study_url": "http://www.geo.hessen.de/"
+    },
+    {
+        "customer": "Hp",
+        "challenge": "One platform for multiple e-commerce initiatives",
+        "description": "HP impresses with multi-channel strategy.",
+        "case_study_url": "http://www.hp.com/"
+    },
+    {
+        "customer": "Williams-lea",
+        "challenge": "Intershop chosen for e-procurement",
+        "description": "Williams Lea benefits from more efficient business processes and huge cost savings.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/williams_lea"
+    },
+    {
+        "customer": "Rspb",
+        "challenge": "Smooth customer journey due to relaunch",
+        "description": "RSPB realizes completely integrated digital shopping experience.",
+        "case_study_url": "https://www.rspb.org.uk/"
+    },
+    {
+        "customer": "Vbh",
+        "challenge": "Transforming Tradition: VBH's Digital Evolution",
+        "description": "VBH leads the way in B2B e-commerce with innovative digital solutions.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/vbh-holding"
+    },
+    {
+        "customer": "United-refrigeration",
+        "challenge": "A future-proof digitalization strategy",
+        "description": "United Refrigeration, Inc. uses the full potential of a B2B webshop based on Intershop.",
+        "case_study_url": "http://www.uri.com/is-bin/INTERSHOP.enfinity/WFS/PrcTransaction"
+    },
+    {
+        "customer": "GES",
+        "challenge": "Highly efficient multichannel processes",
+        "description": "Grupo Electro Stocks uses Intershop to offer its B2B customers the best service across al­",
+        "case_study_url": "https://www.intershop.com/en/customers-details/grupo-electro-stocks-s-l"
+    },
+    {
+        "customer": "Bookspot",
+        "challenge": "Highly distinctivewith clicks and bricks",
+        "description": "BookSpot realizes a central commerce platform for multiple web shops.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/bookspot"
+    },
+    {
+        "customer": "Dynapac",
+        "challenge": "A milestone in customer loyalty",
+        "description": "Dynapac is on the road to success with a digital after-sales portal.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/dynapac"
+    },
+    {
+        "customer": "Ackermann",
+        "challenge": "With tradition into the digital future",
+        "description": "Ackermann relies on Intershop to digitize its mail order business.",
+        "case_study_url": "http://www.ackermann.ch"
+    },
+    {
+        "customer": "Intershop-alko",
+        "challenge": "Perfect shopping experience for B2C and B2B customers",
+        "description": "Alko realizes user-friendly shopping website.",
+        "case_study_url": "http://www.alko.fi/en/products/"
+    },
+    {
+        "customer": "Atlas copco",
+        "challenge": "Cutting-edge B2B e-commerce for a global leader",
+        "description": "Atlas Copco revamps B2B e-commerce, boosting efficiency and customer experience.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/atlas-copco-industrial-technique"
+    },
+    {
+        "customer": "Australia-post",
+        "challenge": "Prepared for future online initiatives",
+        "description": "Australia Post successful with global, digital commerce platform.",
+        "case_study_url": "https://auspost.com.au/shop/"
+    },
+    {
+        "customer": "Baur",
+        "challenge": "New impulses for longtime partnership",
+        "description": "Baur integrates webshop with social commerce initiative.",
+        "case_study_url": "http://www.baur.de"
+    },
+    {
+        "customer": "Boie",
+        "challenge": "Digitalization of technical wholesale",
+        "description": "Boie offers individually customized assortments, prices and conditions.",
+        "case_study_url": "https://www.boie.de"
+    },
+    {
+        "customer": "Breg",
+        "challenge": "360° customer service",
+        "description": "Breg strengthens its online presence with the Intershop Commerce Platform.",
+        "case_study_url": "https://www.breg.com/"
+    },
+    {
+        "customer": "Breil",
+        "challenge": "The world of beautiful things",
+        "description": "Breil creates inspiring shopping experiences for end customers across Europe.",
+        "case_study_url": "http://www.breil.com"
+    },
+    {
+        "customer": "Brita",
+        "challenge": "Succeeding with a globale-commerce strategy",
+        "description": "Brita boosts international growth in B2C and B2B commerce.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/brita"
+    },
+    {
+        "customer": "Bunzl-Logo",
+        "challenge": "Consistent user experience for B2B and B2C",
+        "description": "Bunzl Australasia launches a new B2X platform.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/bunzl"
+    },
+    {
+        "customer": "Cadena",
+        "challenge": "Focus on the digital transformation of B2B customers",
+        "description": "Cadena develops B2B commerce solutions based on Intershop.",
+        "case_study_url": "http://bazaar.cadena.com.co/"
+    },
+    {
+        "customer": "Cenpac",
+        "challenge": "99% customer satisfaction",
+        "description": "Cenpac impresses with its user-friendly online shop for professional packaging solutions.",
+        "case_study_url": "http://www.cenpac.fr/"
+    },
+    {
+        "customer": "Coop",
+        "challenge": "By ambition to online big player",
+        "description": "Coop realizes perfect omni-channel experience.",
+        "case_study_url": "https://www.coop.nl/"
+    },
+    {
+        "customer": "Daily-fresh-food",
+        "challenge": "Cost reduction: 98% of orders received online",
+        "description": "Daily Fresh Food takes the next step in omnichannel food commerce.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/daily-fresh-food"
+    },
+    {
+        "customer": "Desivero",
+        "challenge": "Product and service portal boosts business growth",
+        "description": "Desivero offers truly personalized customer journeys.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/desivero"
+    },
+    {
+        "customer": "Dusyma",
+        "challenge": "Targeting customer satisfaction",
+        "description": "Dusyma optimizes online presence for a perfect customer experience.",
+        "case_study_url": "http://www.dusyma.com/"
+    },
+    {
+        "customer": "Edeka",
+        "challenge": "Ordering groceries online",
+        "description": "EDEKA integrates webshop with bricks-and-mortar retail.",
+        "case_study_url": "http://www.edeka-shops.de"
+    },
+    {
+        "customer": "Elero",
+        "challenge": "Enhanced service and reach for specialist dealers",
+        "description": "Elero reduces need for time-consuming telephone consultation.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/elero_en"
+    },
+    {
+        "customer": "Ellos",
+        "challenge": "Multiple countries, multiple brands",
+        "description": "Ellos realizes modern B2C customer experience.",
+        "case_study_url": "https://www.ellos.com/"
+    },
+    {
+        "customer": "Enel",
+        "challenge": "Sustainable progress in all areas",
+        "description": "Enel Italia realizes a modern online presence for B2C and B2B customers.",
+        "case_study_url": "https://www.enel.com"
+    },
+    {
+        "customer": "Blockfoods",
+        "challenge": "Improved online brand experience and stronger customer loyalty",
+        "description": "Block Foods AG roughs up German e-food market.",
+        "case_study_url": "https://shop.block-house.de"
+    },
+    {
+        "customer": "Farmers logo transparent",
+        "challenge": "Successful with a multichannel strategy",
+        "description": "Farmers creates compelling brand experiences for B2C customers.",
+        "case_study_url": "http://www.farmers.co.nz/"
+    },
+    {
+        "customer": "Fertshed",
+        "challenge": "New level of customer experience",
+        "description": "Fertshed uses the advantages of digital transformation for an optimal B2B customer experience.",
+        "case_study_url": "http://www.fertshed.com.au/"
+    },
+    {
+        "customer": "Service champ",
+        "challenge": "Service Champ, Inc.",
+        "description": "",
+        "case_study_url": "https://www.servicechamp.com/"
+    },
+    {
+        "customer": "Copaco",
+        "challenge": "Copaco Nederland B.V.",
+        "description": "",
+        "case_study_url": "http://www.copaco.com/"
+    },
+    {
+        "customer": "Elex-italia",
+        "challenge": "Elex Italia S.C.p.A.",
+        "description": "",
+        "case_study_url": "http://www.elexitalia.it/"
+    },
+    {
+        "customer": "Ferreteria-unceta",
+        "challenge": "Ferreteria Unceta S.A.",
+        "description": "",
+        "case_study_url": "https://www.unceta.es/"
+    },
+    {
+        "customer": "Gallenca",
+        "challenge": "Gallenca di Roberto Gallenca & C. Sas",
+        "description": "",
+        "case_study_url": "https://www.gallenca.com/"
+    },
+    {
+        "customer": "Alkor-group",
+        "challenge": "ALKOR S.A.",
+        "description": "",
+        "case_study_url": "https://www.alkor-groupe.com/"
+    },
+    {
+        "customer": "Vanderlande",
+        "challenge": "Vanderlande Industries Holding B.V.",
+        "description": "Vanderlande Industries boosts international growth with digital spare parts commerce platform.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/vanderlande"
+    },
+    {
+        "customer": "Nationale postcode loterij",
+        "challenge": "Nationale Postcode Loterij N.V.",
+        "description": "",
+        "case_study_url": "https://www.postcodeloterij.nl"
+    },
+    {
+        "customer": "Lululemon",
+        "challenge": "Lululemon Athletica Canada, Inc.",
+        "description": "Lululemon’s wholesale program provides partners with access to a strategic sales portal.",
+        "case_study_url": "https://www.eu.lululemon.com"
+    },
+    {
+        "customer": "Bruna",
+        "challenge": "Bruna B.V.",
+        "description": "",
+        "case_study_url": "http://www.bruna.nl/"
+    },
+    {
+        "customer": "Baars-bloemhoff",
+        "challenge": "Baars & Bloemhoff B.V.",
+        "description": "",
+        "case_study_url": "https://www.baars-bloemhoff.nl"
+    },
+    {
+        "customer": "Au-forum-du-batiment",
+        "challenge": "AU Forum du Batiment Sas",
+        "description": "",
+        "case_study_url": "https://www.afdb.fr/"
+    },
+    {
+        "customer": "Rai",
+        "challenge": "RAI Amsterdam B.V.",
+        "description": "RAI increases customer satisfaction through a B2B customer portal with self-service portal.",
+        "case_study_url": "https://www.rai.nl/"
+    },
+    {
+        "customer": "Alpheios",
+        "challenge": "Alpheios B.V.",
+        "description": "",
+        "case_study_url": "http://www.alpheios.nl/"
+    },
+    {
+        "customer": "Ahlens",
+        "challenge": "Åhléns AB",
+        "description": "",
+        "case_study_url": "https://www.ahlens.se/cms/in-english"
+    },
+    {
+        "customer": "Fluiconnecto",
+        "challenge": "Customer acquisition online",
+        "description": "Fluiconnecto uses Intershop solution with extensive MyAccount and checkout functionalities.",
+        "case_study_url": "https://www.fluiconnecto.com/"
+    },
+    {
+        "customer": "Four-seasons",
+        "challenge": "Faster, user-friendlier, more modern",
+        "description": "Four Seasons General Merchandise optimizes online presence.",
+        "case_study_url": "http://www.4sgm.com/"
+    },
+    {
+        "customer": "Hoogvliet",
+        "challenge": "Grocery shopping made easy",
+        "description": "Hoogvliet uses Intershop to create a user-friendly online shopping environment.",
+        "case_study_url": "http://www.hoogvliet.com"
+    },
+    {
+        "customer": "Igo-promo",
+        "challenge": "Creating a B2C-like shopping experience",
+        "description": "IGO Promo launches into the future of B2B commerce with Intershop.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/igo-promo"
+    },
+    {
+        "customer": "Im-walking",
+        "challenge": "Step by step towards digital excellence",
+        "description": "I'm walking creates a compelling shopping experience for shoe lovers.",
+        "case_study_url": "https://www.imwalking.de/"
+    },
+    {
+        "customer": "Imperial-tobacco",
+        "challenge": "Further development of digital resources",
+        "description": "Imperial Tobacco digitilizes its sales processes with the Intershop Commerce Platform.",
+        "case_study_url": "https://www.imperialbrands.nl/nl/index.html"
+    },
+    {
+        "customer": "Incitec pivot fertilisers",
+        "challenge": "Creating a compelling global brand experience",
+        "description": "Incitec Pivot Fertilisers conquers global markets.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/incitec_pivot_en"
+    },
+    {
+        "customer": "Indi",
+        "challenge": "Online pure player with growth ambitions",
+        "description": "INDI boosts process flexibility with order management system.",
+        "case_study_url": "https://www.indi.nl/nl-nl/"
+    },
+    {
+        "customer": "Ineos styrolution",
+        "challenge": "Highly efficient business processes",
+        "description": "Styrolution offers B2B customers individualized service and high user comfort.",
+        "case_study_url": "https://www.ineos-styrolution.com/index.html"
+    },
+    {
+        "customer": "Intergastro",
+        "challenge": "Global roll-out",
+        "description": "Intergastro uses Intershop solution for internationalization of their online business.",
+        "case_study_url": "https://www.intergastro.de/"
+    },
+    {
+        "customer": "Isero",
+        "challenge": "Enhanced customer service across all channels",
+        "description": "Isero strengthens online growth with Intershop Commerce Platform.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/isero"
+    },
+    {
+        "customer": "It-preneurs",
+        "challenge": "Effective learning solutions",
+        "description": "ITpreneurs uses Intershop Commerce Platform to make IT training content available worldwide.",
+        "case_study_url": "http://www.itpreneurs.com"
+    },
+    {
+        "customer": "Jumbo",
+        "challenge": "Excelling customer expectations",
+        "description": "Jumbo revolutionizes e-food market and offers personalized shopping experience.",
+        "case_study_url": "https://www.jumbo.com/"
+    },
+    {
+        "customer": "Kpn",
+        "challenge": "Expansion of market leadership",
+        "description": "kpn makes an extensive service portfolio available via the Intershop Commerce Platform.",
+        "case_study_url": "https://www.kpn.com"
+    },
+    {
+        "customer": "Kruitbosch logo",
+        "challenge": "Dealer portal for multiple brands",
+        "description": "Kruitbosch innovates an online shopping experience for bicycle retailers.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/kruitbosch_en"
+    },
+    {
+        "customer": "Lawrence-hanson",
+        "challenge": "Digital wholesale down under",
+        "description": "Lawrence and Hanson Group successful with B2C and B2B e-commerce.",
+        "case_study_url": "https://www.lh.com.au/"
+    },
+    {
+        "customer": "Lechler",
+        "challenge": "Top position in digital B2B commerce",
+        "description": "Lechler simplifies online shopping for B2B customers.",
+        "case_study_url": "https://eshop.lechler.de/en/"
+    },
+    {
+        "customer": "Limmert ressourcen",
+        "challenge": "Setting standards of innovation",
+        "description": "Limmert builds the future of its webshop upon the powerful Intershop Commerce Platform.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/limmert"
+    },
+    {
+        "customer": "Linde Material Handling",
+        "challenge": "Productivity redefined",
+        "description": "A strategic focus on e-commerce keeps Linde Material Handling leading a difficult market ­",
+        "case_study_url": "https://www.intershop.com/en/customers-details/kion"
+    },
+    {
+        "customer": "M-net",
+        "challenge": "Customer portal for B2C and B2B customers",
+        "description": "Together with Intershop, M-net implements an online platform for telecommunications services.",
+        "case_study_url": "https://www.m-net.de/geschaeftskunden/"
+    },
+    {
+        "customer": "De-bijenkorf",
+        "challenge": "Winning formula for happy customers",
+        "description": "De Bijenkorf realizes premium customer experience thanks to fully integrated touchpoints.",
+        "case_study_url": "https://www.debijenkorf.nl/"
+    },
+    {
+        "customer": "Martin-and-servera",
+        "challenge": "À la carte — B2B commerce",
+        "description": "Martin & Servera realizes a personalized shopping experience.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/martin_servera_en"
+    },
+    {
+        "customer": "Mekonomen",
+        "challenge": "Ready for the digital future",
+        "description": "Mekonomen implements sustainable omni-channel strategy.",
+        "case_study_url": "http://www.mekonomen.se"
+    },
+    {
+        "customer": "Merck-us",
+        "challenge": "Successful with e-commerce platform",
+        "description": "Merck has relied on Intershop in terms of B2B commerce for many years.",
+        "case_study_url": "https://www.merckvaccines.com/"
+    },
+    {
+        "customer": "Intershop-merck",
+        "challenge": "Central administration of international sales initiatives",
+        "description": "Merck Chemicals launches consistent global online presence.",
+        "case_study_url": "https://www.merckmillipore.com"
+    },
+    {
+        "customer": "Merck-millipore",
+        "challenge": "B2B sales in over 80 countries",
+        "description": "Merck Millipore offers B2B customers worldwide a uniform shopping experience when buying ­",
+        "case_study_url": "https://www.emdmillipore.com/US/en"
+    },
+    {
+        "customer": "Miele",
+        "challenge": "Multichannel e-commerce for high-end home appliances",
+        "description": "Miele uses Intershop Commerce Platform for 27 B2C and professional online shops",
+        "case_study_url": "https://www.intershop.com/en/customers-details/miele"
+    },
+    {
+        "customer": "Mister-spex",
+        "challenge": "From online store to multichannel strategy",
+        "description": "Mister Spex paves the way for further growth.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/mister-spex"
+    },
+    {
+        "customer": "Norauto",
+        "challenge": "Pioneer in the field of new mobility",
+        "description": "Mobivia Group implements digital customer portal based on Intershop.",
+        "case_study_url": "https://www.norauto.fr/"
+    },
+    {
+        "customer": "Motul",
+        "challenge": "Procurement solution for distributors and resellers",
+        "description": "Motul optimizes procurement processes with the Intershop Platform.",
+        "case_study_url": "https://www.motul.com/"
+    },
+    {
+        "customer": "Musicstore",
+        "challenge": "Digital duet",
+        "description": "Music Store sets the course for international growth.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/music-store"
+    },
+    {
+        "customer": "Netto",
+        "challenge": "Successful platform migration",
+        "description": "Netto impresses with Intershop-based online shop.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/netto-markendiscount"
+    },
+    {
+        "customer": "Ns-reizigers",
+        "challenge": "Central e-commerce solution",
+        "description": "NS Reizigers enables customers worldwide to travel easily and safely.",
+        "case_study_url": "http://www.ns.nl"
+    },
+    {
+        "customer": "On-geo",
+        "challenge": "Commerce platform for geo data",
+        "description": "on-geo benefits from central management of all online activities.",
+        "case_study_url": "http://www.on-geo.de"
+    },
+    {
+        "customer": "Otelo",
+        "challenge": "From catalog sales to multi-channel business",
+        "description": "Otelo implements long-term expansion strategy.",
+        "case_study_url": "http://www.otelo.fr"
+    },
+    {
+        "customer": "Pall-corporation",
+        "challenge": "Market leader thanks to innovative technology",
+        "description": "Pall Corporation serves customer needs across a broad spectrum of life sciences and industry.",
+        "case_study_url": "http://www.pall.com"
+    },
+    {
+        "customer": "Papier-liebl",
+        "challenge": "Investing in a digital future",
+        "description": "Papier LIEBL digitalizes the B2B commerce for all its subsidiaries.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/papierliebl"
+    },
+    {
+        "customer": "Pbs bro-buerohandel",
+        "challenge": "Successful B2B and B2C commerce strategies",
+        "description": "PBS Logitek counts on Intershop Commerce Platform.",
+        "case_study_url": "http://www.buerohandel.at/"
+    },
+    {
+        "customer": "Pierce",
+        "challenge": "International expansion of an online pure player",
+        "description": "PIERCE sets digital industry standards.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/pierce"
+    },
+    {
+        "customer": "Plus",
+        "challenge": "Customer oriented e-commerce",
+        "description": "PLUS Retail provides customers with an inspiring shopping experience.",
+        "case_study_url": "http://www.plus.nl"
+    },
+    {
+        "customer": "Raja",
+        "challenge": "Powering B2B e-commerce growth across Europe",
+        "description": "Powering B2B e-commerce growth across Europe",
+        "case_study_url": "https://www.intershop.com/en/customers-details/raja"
+    },
+    {
+        "customer": "Runners-point",
+        "challenge": "Faster platform due to more efficient processes",
+        "description": "Runners Point is on the road of success thanks to cross-channel strategy.",
+        "case_study_url": "https://www.runnerspoint.de/"
+    },
+    {
+        "customer": "Sai-global",
+        "challenge": "Digital risk management with Intershop",
+        "description": "SAI Global takes a step-by-step approach to reach digital capability goals.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/saiglobal"
+    },
+    {
+        "customer": "Schippers",
+        "challenge": "International success with digital sales channels in 40 countries",
+        "description": "Schippers digitalizes livestock farming.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/schippers"
+    },
+    {
+        "customer": "Schmiederer-schendl",
+        "challenge": "Digital brand management",
+        "description": "Schmiderer & Schendl succeeds with a white-label shop.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/schmiderer_schendl_en"
+    },
+    {
+        "customer": "Schneider-electric",
+        "challenge": "Solutions for efficiency and sustainability",
+        "description": "Schneider Electric offers a first-class service via its digital customer portal.",
+        "case_study_url": "https://www.se.com/de/de/"
+    },
+    {
+        "customer": "Spinner",
+        "challenge": "Learned from B2C, redefined in B2B",
+        "description": "SPINNER implements target group-specific online shop.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/spinner"
+    },
+    {
+        "customer": "Giphar",
+        "challenge": "Digital pharmacy",
+        "description": "Sogiphar S.A. implements a digital information and service portal based on Intershop.",
+        "case_study_url": "http://www.pharmacie-giphar.fr/"
+    },
+    {
+        "customer": "Sonepar",
+        "challenge": "Connection of customer and dealer portal",
+        "description": "Sonepar masters digitalization and integrates e-shops of their network partners.",
+        "case_study_url": "https://www.sonepar.fr/"
+    },
+    {
+        "customer": "Sportscheck",
+        "challenge": "Implementing customer requests fast and cost-saving",
+        "description": "SportScheck counts on high flexibility and usability of their webshop.",
+        "case_study_url": "https://www.sportscheck.com"
+    },
+    {
+        "customer": "Stadium",
+        "challenge": "A huge 100% year-on-year growth in online sales",
+        "description": "Sports retailer Stadium leads e-commerce field in the Nordics.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/stadium"
+    },
+    {
+        "customer": "Stadtwerke-rostock",
+        "challenge": "Lasting successs due to long-term customer loyalty",
+        "description": "Stadtwerke Rostock convinces with interactive customer portal on Intershop basis.",
+        "case_study_url": "http://www.swrag.de/"
+    },
+    {
+        "customer": "Stiho",
+        "challenge": "Customer focus across all channels",
+        "description": "Stiho Group makes the work of building contractors much easier with digital tools.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/stiho-groep"
+    },
+    {
+        "customer": "Tomtom",
+        "challenge": "Successful platform migration",
+        "description": "TomTom wins customers worldwide after migrating to Intershop solution.",
+        "case_study_url": "https://www.tomtom.com"
+    },
+    {
+        "customer": "Town-country",
+        "challenge": "Intershop solution as a basis for B2B2C customer portal",
+        "description": "Town & Country Haus connects license partners and house builders with online portal.",
+        "case_study_url": "https://www.tc.de/massivhaus.html"
+    },
+    {
+        "customer": "Trony",
+        "challenge": "All from a single source",
+        "description": "Trony creates a consistent omnichannel brand experience.",
+        "case_study_url": "https://www.intershop.com/en/customers-details/trony_438"
+    },
+    {
+        "customer": "Here",
+        "challenge": "On the right track in e-commerce",
+        "description": "HERE North America continuously develops online experiences based on Intershop.",
+        "case_study_url": "https://here.navigation.com/home/en_GB/HEREEMEA/EUR"
+    }
+]
