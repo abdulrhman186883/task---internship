@@ -97,7 +97,7 @@ async def recommend(request: QueryRequest):
     # We use all fields to ensure the embedding captures the full context
     corpus_texts = [f"{ref['customer']} {ref['challenge']} {ref['description']}" for ref in references]
     
-    # Get Embeddings
+    # Get Embeddings -> words to vectors 
     corpus_embeddings = [get_ollama_embedding(t) for t in corpus_texts]
     query_embedding = get_ollama_embedding(user_query)
     
@@ -109,8 +109,7 @@ async def recommend(request: QueryRequest):
     candidates = [references[i] for i in top_indices]
     candidate_cosine_scores = [sim_scores[i] for i in top_indices]
 
-    # --- STAGE 2: RE-RANKING ---
-    # FIXED: The Reranker MUST see the 'challenge' field to match the query "Self-service"
+    # --- STAGE 2: RE-RANKING --- compare query to candidate 
     # Format: [Query, Document_Text]
     rerank_pairs = []
     for c in candidates:
